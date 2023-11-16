@@ -12,9 +12,29 @@ body {
 	overflow-x: hidden;
 }
 
-.hidden {
-    display: none;
-}
+
+
+::-webkit-scrollbar {
+	width: 10px;
+	background-color: #F5F5F5; /* width of the entire scrollbar */
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+	background: #1d4941;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	background-color: #FFF;
+	background-image: -webkit-gradient(linear,
+									   40% 0%,
+									   75% 84%,
+									   from(#1d4941),
+									   to(#1d4941),
+									   color-stop(.6,#3c7c40)) /* color of the scrollbar track */
+  }
 .header {
 
 	padding: 0 3rem;
